@@ -99,7 +99,6 @@ ON FEB.orderid=cust.order_id
 WHERE length(orderid) = 6 
 AND orderid <> 'Order ID'
 
-
 #12. What was the average quantity of products purchased per account in February? (Hint: just like question 3, we want the overall average, not the average for each account individually).
 select sum(quantity)/count(cust.acctnum)
 FROM BIT_DB.FebSales Feb
